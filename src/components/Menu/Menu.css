@@ -1,0 +1,74 @@
+.menu {
+  background-color: var(--darkblack-color);
+  padding: 1rem 0 1rem 0;
+  scroll-margin-top: 80px;
+}
+.menu .mainText {
+  color: var(--white-color);
+}
+.menu .highlightText {
+  color: var(--yellow-color);
+}
+.menu h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.menu-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.menu-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.5rem 0 2.5rem 0;
+  margin: 0 1rem 0 1rem;
+  border: 2px solid var(--border-gray);
+  border-radius: 2px;
+  background-color: var(--gray-color);
+}
+.menu-card:hover {
+  background-color: wheat
+}
+.menu-card:hover h3,
+.price {
+  color: var(--black-color);
+}
+.menu-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu-card h3 {
+  text-transform: capitalize;
+  color: var(--white-color);
+  font-weight: 400;
+}
+.menu-card .price {
+  color: var(--white-color);
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  margin-left: 4px;
+}
+@media screen and (min-width: 768px) {
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem 0 5rem;
+  }
+  .menu-card {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

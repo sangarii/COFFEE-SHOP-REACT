@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* ------------------- Colors ------------------ */
+
+:root{
+  --white-color:#fff;
+  --black-color:#000;
+  --darkblack-color: #000201;
+  --yellow-color: #D3AF7D;
+  --gray-color: #111219;
+  --border-gray:rgba(128, 128, 128, 0.429);
+  --brown-color:brown;
+}
+
+/* -------------------- common ------------------ */
+
+.btn {
+  background-color: var(--yellow-color);
+  border: none;
+  color: var(--white-color);
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2px;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.btn:hover{
+  padding: 0.5rem 1.6rem;
+  font-size: 17px;font-weight: 500;
+}
